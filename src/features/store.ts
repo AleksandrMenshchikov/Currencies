@@ -1,9 +1,13 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import currentDateReducer from './currentDate/currentDateSlice';
+import currenciesReduser from './currencies/currenciesSlice';
+import tooltipReducer from './tooltip/tooltipSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    currentDate: currentDateReducer,
+    currencies: currenciesReduser,
+    tooltip: tooltipReducer,
   },
 });
 

@@ -1,0 +1,37 @@
+.table {
+  width: 100%;
+  padding: 20px 20px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+td:nth-of-type(1) {
+  text-align: end;
+}
+
+td {
+  width: calc(25%);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+tbody tr:hover {
+  background-color: bisque;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .table {
+    padding: 20px 15px;
+  }
+  table,
+  th,
+  td {
+    padding: 4px;
+  }
+}
