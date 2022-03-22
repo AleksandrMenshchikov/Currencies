@@ -1,8 +1,9 @@
+import { memo } from 'react';
 import Header from '../components/header/Header';
 import Table from '../components/table/Table';
 import Tooltip from '../components/tooltip/Tooltip';
 
-export default function Home() {
+const HomePage = memo(() => {
   return (
     <>
       <Header />
@@ -10,4 +11,6 @@ export default function Home() {
       <Tooltip />
     </>
   );
-}
+});
+
+export default HomePage;

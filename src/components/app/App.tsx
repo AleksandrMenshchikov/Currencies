@@ -7,9 +7,11 @@ import {
   selectCurrencies,
 } from '../../features/currencies/currenciesSlice';
 import Preloader from '../preloader/Preloader';
-import Home from '../../pages/Home';
 import { Route, Switch } from 'react-router-dom';
-import NotFound from '../not-found/NotFound';
+import CurrencyArchive from '../currency_archive/CurrencyArchive';
+import HomePage from '../../pages/HomePage';
+import NotFoundPage from '../../pages/NotFoundPage';
+import ProtectedRoute from '../protected-route/ProtectedRoute';
 
 function App() {
   const { isLoading } = useAppSelector(selectCurrencies);
@@ -39,13 +41,18 @@ function App() {
           </a>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <HomePage />
             </Route>
-            <Route exact path="/currency_archive">
-              <h2>Hello</h2>
-            </Route>
+            <ProtectedRoute
+              exact
+              component={CurrencyArchive}
+              path="/currency_archive"
+              pathToRedirect={{
+                pathname: '/',
+              }}
+            />
             <Route>
-              <NotFound />
+              <NotFoundPage />
             </Route>
           </Switch>
         </div>

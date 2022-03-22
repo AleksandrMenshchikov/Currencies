@@ -5,22 +5,22 @@
   box-sizing: border-box;
 }
 
-td:nth-of-type(1) {
+.table__td:nth-of-type(1) {
   text-align: end;
 }
 
-td {
+.table__td {
   width: calc(25%);
 }
 
 table,
-th,
-td {
+.table__th,
+.table__td {
   border: 1px solid black;
   padding: 8px;
 }
 
-tbody tr:hover {
+tbody .table__tr:hover {
   background-color: bisque;
   cursor: pointer;
 }
@@ -30,8 +30,8 @@ tbody tr:hover {
     padding: 20px 15px;
   }
   table,
-  th,
-  td {
+  .table__th,
+  .table__td {
     padding: 4px;
   }
 }

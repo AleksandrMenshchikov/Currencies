@@ -1,13 +1,13 @@
+import React, { memo } from 'react';
 import { useHistory } from 'react-router-dom';
 import styles from './NotFound.module.css';
 
-export default function NotFound() {
+const NotFound = memo(() => {
   const history = useHistory();
 
   function handleButtonClick() {
     history.push('/');
   }
-
   return (
     <div className={styles.notFoundPage}>
       <div className={styles.notFoundPage__container}>
@@ -25,4 +25,6 @@ export default function NotFound() {
       </div>
     </div>
   );
-}
+});
+
+export default NotFound;
