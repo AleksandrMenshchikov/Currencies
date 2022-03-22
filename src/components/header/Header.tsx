@@ -2,6 +2,7 @@ import { memo, useEffect } from 'react';
 import { selectCurrencies } from '../../features/currencies/currenciesSlice';
 import {
   setCurrentDate,
+  stopCurrentDate,
   selectCurrentDate,
 } from '../../features/currentDate/currentDateSlice';
 import { useAppDispatch, useAppSelector } from '../../features/hooks';
@@ -12,17 +13,12 @@ const Header = memo(() => {
   const currentDate = useAppSelector(selectCurrentDate);
   const data = useAppSelector(selectCurrencies);
   const dispatch = useAppDispatch();
-  
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      dispatch(setCurrentDate());
-      clearTimeout(timer);
-    }, 1000);
 
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [currentDate, dispatch]);
+  useEffect(() => {
+    dispatch(setCurrentDate());
+    return () => stopCurrentDate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <header className={styles.header}>

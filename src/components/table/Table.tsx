@@ -3,7 +3,7 @@ import { selectCurrencies } from '../../features/currencies/currenciesSlice';
 import { useAppDispatch, useAppSelector } from '../../features/hooks';
 import {
   setCoordinates,
-  setDisplay,
+  setOpacity,
   setText,
 } from '../../features/tooltip/tooltipSlice';
 import { calculatePercent } from '../../utils/calculatePercent';
@@ -25,12 +25,13 @@ const Table = memo(() => {
   }
 
   function handleTableMouseLeave(e: any) {
-    dispatch(setDisplay('none'));
+    dispatch(setOpacity(0));
     dispatch(setText(''));
+    dispatch(setCoordinates({ x: -30, y: 0 }));
   }
 
   function handleTableMouseOver(e: any) {
-    dispatch(setDisplay('block'));
+    dispatch(setOpacity(1));
   }
 
   const optimizedHandleTableMouseMove = throttle(handleTableMouseMove, 50);

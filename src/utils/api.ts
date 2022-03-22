@@ -14,6 +14,12 @@ class Api {
   getLatestCurrencies() {
     return fetch(`${this._baseUrl}/daily_json.js`).then(this._handleResponse);
   }
+
+  getArchiveCurrencies(yyyy: string, mm: string, dd: string) {
+    return fetch(
+      `${this._baseUrl}/archive/${yyyy}/${mm}/${dd}/daily_json.js`
+    ).then(this._handleResponse);
+  }
 }
 
 export const api = new Api({

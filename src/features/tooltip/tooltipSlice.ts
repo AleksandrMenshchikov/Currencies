@@ -5,14 +5,14 @@ export interface tooltipState {
   x: number;
   y: number;
   text: string;
-  display: string;
+  opacity: number;
 }
 
 const initialState: tooltipState = {
-  x: 0,
+  x: -50,
   y: 0,
   text: '',
-  display: 'none'
+  opacity: 0,
 };
 
 const tooltipSlice = createSlice({
@@ -26,13 +26,13 @@ const tooltipSlice = createSlice({
     setText: (state, action) => {
       state.text = action.payload;
     },
-    setDisplay: (state, action) => {
-      state.display = action.payload;
+    setOpacity: (state, action) => {
+      state.opacity = action.payload;
     },
   },
 });
 
-export const { setCoordinates, setText, setDisplay } = tooltipSlice.actions;
+export const { setCoordinates, setText, setOpacity } = tooltipSlice.actions;
 
 export const selectTooltip = (state: RootState) => state.tooltip;
 

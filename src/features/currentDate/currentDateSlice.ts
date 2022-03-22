@@ -24,8 +24,14 @@ const { setTime } = currentDateSlice.actions;
 
 export const selectCurrentDate = (state: RootState) => state.currentDate.value;
 
+let timerId: ReturnType<typeof setTimeout>;
 export const setCurrentDate = (): AppThunk => (dispatch) => {
-  dispatch(setTime(getCurrentDate()));
+  timerId = setTimeout(function tick() {
+    dispatch(setTime(getCurrentDate()));
+    timerId = setTimeout(tick, 1000);
+  }, 1000);
 };
+
+export const stopCurrentDate = () => clearTimeout(timerId);
 
 export default currentDateSlice.reducer;
