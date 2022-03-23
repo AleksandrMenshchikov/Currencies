@@ -46,7 +46,7 @@ const CurrencyArchive = memo(() => {
               data.map((item: any, index) => (
                 <tr className={styles.archive__tr} key={index}>
                   <td className={styles.archive__td}>
-                    {formatDate(item.Timestamp).split(',')[0]}
+                    {formatDate(item.PreviousDate).split(',')[0]}
                   </td>
                   <td className={styles.archive__td}>
                     {item.Valute[codeValute].Nominal}
