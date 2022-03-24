@@ -31,7 +31,7 @@ export const selectArchiveCurrencies = (state: RootState) =>
 export const setArchiveCurrenciesData =
   (): AppThunk => (dispatch, getState) => {
     const arrData = [getState().currencies.data];
-
+    
     let counter = 0;
     function getData() {
       const arrDate = arrData[counter].PreviousURL.split('/').slice(-4, -1);

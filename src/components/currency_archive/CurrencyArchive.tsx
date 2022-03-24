@@ -49,13 +49,13 @@ const CurrencyArchive = memo(() => {
                     {formatDate(item.PreviousDate).split(',')[0]}
                   </td>
                   <td className={styles.archive__td}>
-                    {item.Valute[codeValute].Nominal}
+                    {item.Valute[codeValute] && item.Valute[codeValute].Nominal}
                   </td>
                   <td className={`${styles.archive__td} codeValute`}>
                     {codeValute}
                   </td>
                   <td className={styles.archive__td}>
-                    {item.Valute[codeValute].Value}
+                    {item.Valute[codeValute] && item.Valute[codeValute].Value}
                   </td>
                 </tr>
               ))}

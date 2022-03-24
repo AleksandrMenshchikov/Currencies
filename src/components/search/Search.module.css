@@ -1,0 +1,35 @@
+.container {
+  height: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 490px;
+  width: 100%;
+}
+
+.search {
+  width: 100%;
+  outline: none;
+  border: 1px solid blue;
+  padding: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid blue;
+  border-right: 1px solid blue;
+  border-bottom: 1px solid blue;
+  border-left: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.button:hover {
+  background-color: bisque;
+}

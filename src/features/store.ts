@@ -2,6 +2,7 @@ import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import currentDateReducer from './currentDate/currentDateSlice';
 import currenciesReduser from './currencies/currenciesSlice';
 import archiveCurrenciesReducer from './archiveCurrencies/archiveCurrenciesSlice';
+import searchReducer from './search/searchSlice';
 import tooltipReducer from './tooltip/tooltipSlice';
 
 export const store = configureStore({
@@ -10,6 +11,7 @@ export const store = configureStore({
     currencies: currenciesReduser,
     tooltip: tooltipReducer,
     archiveCurrencies: archiveCurrenciesReducer,
+    search: searchReducer,
   },
 });
 
