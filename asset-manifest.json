@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Currencies/index.html/static/css/main.b1e50b7e.css",
-    "main.js": "/Currencies/index.html/static/js/main.78232b5d.js",
-    "static/media/Roboto-Regular.ttf": "/Currencies/index.html/static/media/Roboto-Regular.25e40da956314b12d333.ttf",
-    "static/media/Roboto-Regular.woff": "/Currencies/index.html/static/media/Roboto-Regular.31012f9b3e3da44f87e8.woff",
-    "static/media/Roboto-Regular.woff2": "/Currencies/index.html/static/media/Roboto-Regular.a25806274237d06e00a6.woff2",
-    "static/media/spin-black.svg": "/Currencies/index.html/static/media/spin-black.8a8cd45e7bfdf14d46bc2156eeddd44b.svg",
-    "index.html": "/Currencies/index.html/index.html",
-    "main.b1e50b7e.css.map": "/Currencies/index.html/static/css/main.b1e50b7e.css.map",
-    "main.78232b5d.js.map": "/Currencies/index.html/static/js/main.78232b5d.js.map"
+    "main.css": "/AleksandrMenshchikov/Currencies/tree/gh-pages/static/css/main.41e59c48.css",
+    "main.js": "/AleksandrMenshchikov/Currencies/tree/gh-pages/static/js/main.98a71291.js",
+    "static/media/Roboto-Regular.ttf": "/AleksandrMenshchikov/Currencies/tree/gh-pages/static/media/Roboto-Regular.25e40da956314b12d333.ttf",
+    "static/media/Roboto-Regular.woff": "/AleksandrMenshchikov/Currencies/tree/gh-pages/static/media/Roboto-Regular.31012f9b3e3da44f87e8.woff",
+    "static/media/Roboto-Regular.woff2": "/AleksandrMenshchikov/Currencies/tree/gh-pages/static/media/Roboto-Regular.a25806274237d06e00a6.woff2",
+    "static/media/spin-black.svg": "/AleksandrMenshchikov/Currencies/tree/gh-pages/static/media/spin-black.8a8cd45e7bfdf14d46bc2156eeddd44b.svg",
+    "index.html": "/AleksandrMenshchikov/Currencies/tree/gh-pages/index.html",
+    "main.41e59c48.css.map": "/AleksandrMenshchikov/Currencies/tree/gh-pages/static/css/main.41e59c48.css.map",
+    "main.98a71291.js.map": "/AleksandrMenshchikov/Currencies/tree/gh-pages/static/js/main.98a71291.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1e50b7e.css",
-    "static/js/main.78232b5d.js"
+    "static/css/main.41e59c48.css",
+    "static/js/main.98a71291.js"
   ]
 }
