@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Currencies/static/css/main.c0e7801c.css",
-    "main.js": "/Currencies/static/js/main.e5efd666.js",
-    "static/media/Roboto-Regular.ttf": "/Currencies/static/media/Roboto-Regular.25e40da956314b12d333.ttf",
-    "static/media/Roboto-Regular.woff": "/Currencies/static/media/Roboto-Regular.31012f9b3e3da44f87e8.woff",
-    "static/media/Roboto-Regular.woff2": "/Currencies/static/media/Roboto-Regular.a25806274237d06e00a6.woff2",
-    "static/media/spin-black.svg": "/Currencies/static/media/spin-black.8a8cd45e7bfdf14d46bc2156eeddd44b.svg",
-    "index.html": "/Currencies/index.html",
-    "main.c0e7801c.css.map": "/Currencies/static/css/main.c0e7801c.css.map",
-    "main.e5efd666.js.map": "/Currencies/static/js/main.e5efd666.js.map"
+    "main.css": "/static/css/main.70254497.css",
+    "main.js": "/static/js/main.d000807a.js",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.25e40da956314b12d333.ttf",
+    "static/media/Roboto-Regular.woff": "/static/media/Roboto-Regular.31012f9b3e3da44f87e8.woff",
+    "static/media/Roboto-Regular.woff2": "/static/media/Roboto-Regular.a25806274237d06e00a6.woff2",
+    "static/media/spin-black.svg": "/static/media/spin-black.8a8cd45e7bfdf14d46bc2156eeddd44b.svg",
+    "index.html": "/index.html",
+    "main.70254497.css.map": "/static/css/main.70254497.css.map",
+    "main.d000807a.js.map": "/static/js/main.d000807a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0e7801c.css",
-    "static/js/main.e5efd666.js"
+    "static/css/main.70254497.css",
+    "static/js/main.d000807a.js"
   ]
 }
